@@ -7,5 +7,5 @@ def expected_value_discrete(x: list, p: list) -> float:
     # Write code here
     esp = 0
     for i in range(len(x)):
-        esp += float(x[i]*p[i])
-    return esp
+        esp += x[i]*p[i]
+    return float(esp)
