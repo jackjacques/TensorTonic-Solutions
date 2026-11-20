@@ -5,7 +5,6 @@ def expected_value_discrete(x: list, p: list) -> float:
     Returns the expected value as a Python float.
     """
     # Write code here
-    esp = 0
-    for i in range(len(x)):
-        esp += x[i]*p[i]
-    return float(esp)
+    x = np.asarray(x, dtype = float)
+    p = np.asarray(p, dtype = float)
+    return float(np.dot(x, p))
